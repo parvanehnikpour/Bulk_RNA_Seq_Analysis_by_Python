@@ -92,5 +92,5 @@ In the test data provided, we expect that samples with **IPS** state will group 
 
 ## Additional Information
 
-- This script was developed for the final project of Python_for_biologists_2,5_HT24 course, and it can be modified to suit specific requirements.
+- This script was developed for the final project of Python_for_biologists_2,5_HT24 course (Automn 2024, Gothenburg University, Sweden), and it can be modified to suit specific requirements.
 - If you encounter any problems while using this script, please feel free to reach out to me at parvanehnikpour@gmail.com. I’m happy to assist you with any issues you may face.
