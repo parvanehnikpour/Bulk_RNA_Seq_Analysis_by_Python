@@ -89,3 +89,8 @@ In the test data provided, we expect that samples with **IPS** state will group 
 ## Additional Notes
 - The sample renaming step is optional and can be customized by modifying the `rename_dict` dictionary.
 - PCA and UMAP parameters can be adjusted to optimize the visualization for your specific dataset.
+
+## Additional Information
+
+- This script was developed for the final project of Python_for_biologists_2,5_HT24 course, and it can be modified to suit specific requirements.
+- If you encounter any problems while using this script, please feel free to reach out to me at parvanehnikpour@gmail.com. I’m happy to assist you with any issues you may face.
