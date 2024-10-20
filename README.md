@@ -79,6 +79,9 @@ python RNA_seq_analysis_final.py
 
 The script will output two Excel files and two visualizations, saved in the current working directory.
 
+## Expected Results
+In the test data provided, we expect that samples with **IPS** state will group together, while **NPC** and **NRN** states will group all together.
+
 ## Example Output
 - **PCA Plot**: Visualizes how samples cluster based on the first two principal components.
 - **UMAP Plot**: Visualizes the UMAP embedding, revealing patterns in gene expression across samples.
