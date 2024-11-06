@@ -7,8 +7,7 @@
 ##############################################################
 #######################Importing packages#####################
 ##############################################################
-# Prerequisites
-
+## Prerequisites
 ### Software Requirements
 - Python 3.x is required to run this script.
 
