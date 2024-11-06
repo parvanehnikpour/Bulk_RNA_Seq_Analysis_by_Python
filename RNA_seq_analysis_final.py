@@ -7,9 +7,22 @@
 ##############################################################
 #######################Importing packages#####################
 ##############################################################
-# All required packages are listed in *environment.yml* for Conda setup
+# Prerequisites
 
-# Run: conda env create -f environment.yml to create the environment
+### Software Requirements
+- Python 3.x is required to run this script.
+
+### Conda Environment
+As all required packages are listed in *environment.yml* for Conda setup, make sure you have created a Conda environment with the required packages. You can set it up using the `environment.yml` file included in the repository.
+
+To create the environment, run:
+
+```bash
+conda env create -f environment.yml
+```
+
+
+
 
 # Import packages
 import pandas as pd                                   # Import pandas (a powerful tool for data manipulation and analysis) library and alias it as 'pd'
