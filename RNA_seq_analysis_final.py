@@ -165,7 +165,7 @@ plt.show()
 
 # Performing UMAP
 # Create UMAP Object and Perform Transformation
-umap_obj = umap.UMAP(n_neighbors=5, min_dist=0.3, random_state=42)
+umap_obj = umap.UMAP(n_neighbors=5, min_dist=0.3)
 embedding = umap_obj.fit_transform(RNAseq1_scaled)
 
 # Create a DataFrame for the UMAP embedding with sample identifiers
