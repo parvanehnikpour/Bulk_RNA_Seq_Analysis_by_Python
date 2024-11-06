@@ -7,15 +7,11 @@
 ##############################################################
 #######################Importing packages#####################
 ##############################################################
-# Once the packages are installed (using pip install -r requirements.txt), we import them into our .py script
-import sys
+# All required packages are listed in *environment.yml* for Conda setup
 
-# Print the Python executable being used
-print("Python executable being used:", sys.executable)
+# Run: conda env create -f environment.yml to create the environment
 
-# Print the Python version being used
-print("Python version:", sys.version)
-
+# Import packages
 import pandas as pd                                   # Import pandas (a powerful tool for data manipulation and analysis) library and alias it as 'pd'
 import seaborn as sns                                 # Import seaborn for statistical data visualization
 import matplotlib.pyplot as plt                       # Import matplotlib for plotting data
