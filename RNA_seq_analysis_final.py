@@ -21,8 +21,7 @@ To create the environment, run:
 conda env create -f environment.yml
 ```
 
-
-
+### After creating a Conda Environment, import packages with below scripts: 
 
 # Import packages
 import pandas as pd                                   # Import pandas (a powerful tool for data manipulation and analysis) library and alias it as 'pd'
