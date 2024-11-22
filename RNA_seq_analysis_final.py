@@ -16,6 +16,7 @@
 ## After creating a Conda Environment, import packages with below scripts: 
 
 # Import packages
+import argparse                                       # Import argparse for parsing command-line arguments
 import pandas as pd                                   # Import pandas (a powerful tool for data manipulation and analysis) library and alias it as 'pd'
 import seaborn as sns                                 # Import seaborn for statistical data visualization
 import matplotlib.pyplot as plt                       # Import matplotlib for plotting data
@@ -26,6 +27,30 @@ from sklearn.preprocessing import StandardScaler      # Import StandardScaler fo
 ##############################################################
 ########Data Preparation (Merging and Renaming Samples)#######
 ##############################################################
+#Solving the issue of hardcoded paths using argparse
+#To address the issue of hardcoded paths in this Python script, we will use the "argparse" module to accept file paths as command-line arguments.
+# Setting up the argument parser
+parser = argparse.ArgumentParser(description="RNA-seq analysis with PCA and UMAP")
+parser.add_argument("--file1", type=str, required=True, help="Path to the first RNA-seq file (e.g., run1.xlsx).")
+parser.add_argument("--file2", type=str, required=True, help="Path to the second RNA-seq file (e.g., run2.xlsx).")
+parser.add_argument("--metadata", type=str, required=True, help="Path to the sample metadata file (e.g., Samples_metadata.xlsx).")
+
+# Parsing the arguments
+args = parser.parse_args()
+
+# Assigning arguments to variables
+file1_path = args.file1
+file2_path = args.file2
+metadata_path = args.metadata
+
+# Opening Excel files
+file1 = pd.read_excel(file1_path)  # Load the first RNA-seq file
+file2 = pd.read_excel(file2_path)  # Load the second RNA-seq file
+samples_metadata = pd.read_excel(metadata_path, sheet_name="Sheet1")  # Load the metadata file
+
+#To run the scripts, paste these in your terminal and make sure you replace path/to/run1.xlsx, path/to/run2.xlsx, and path/to/Samples_metadata.xlsx with the actual paths to your files.
+# Paste in your terminal: python RNA_seq_analysis_final.py --file1 path/to/run1.xlsx --file2 path/to/run2.xlsx --metadata path/to/Samples_metadata.xlsx
+
 #Merging
 #Opening Excel files (In this example, run1 and run2 of our RNASeq count data)
 file1 = pd.read_excel("run1.xlsx")  # Make sure the file is in the same directory
