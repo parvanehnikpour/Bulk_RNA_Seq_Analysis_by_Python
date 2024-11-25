@@ -76,6 +76,10 @@ The resulting plots are saved as JPEG images (`PCA_plot.jpeg` and `UMAP_plot.jpe
 ```bash
 python RNA_seq_analysis_final.py
 ```
+3. Update: Instead of using hardcoded paths, I have added command-line arguments to the script. Now, you can pass the file paths as inputs when running the script.
+In terminal just write: python RNA_seq_analysis_final.py --file1 path/to/run1.xlsx --file2 path/to/run2.xlsx --metadata path/to/Samples_metadata.xlsx
+
+Note: Replace path/to/... with the actual file paths
 
 The script will output two Excel files and two visualizations, saved in the current working directory.
 
