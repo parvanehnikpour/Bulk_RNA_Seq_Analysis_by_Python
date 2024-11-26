@@ -94,7 +94,7 @@ print("The xlsx output file: renamed_combined_run1run2.xlsx was created.")
 
 # Performing PCA
 # Load the metadata file
-samples_metadata = pd.read_excel("Samples_metadata.xlsx", sheet_name="Sheet1")
+samples_metadata = pd.read_excel(metadata_path, sheet_name="Sheet1")
 print(samples_metadata.head(10))  # Display the first 10 rows of sample metadata
 
 # Prepare the RNA-seq data for PCA
