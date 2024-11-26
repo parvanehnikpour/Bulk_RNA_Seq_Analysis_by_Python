@@ -53,8 +53,8 @@ samples_metadata = pd.read_excel(metadata_path, sheet_name="Sheet1")  # Load the
 
 #Merging
 #Opening Excel files (In this example, run1 and run2 of our RNASeq count data)
-file1 = pd.read_excel("run1.xlsx")  # Make sure the file is in the same directory
-file2 = pd.read_excel("run2.xlsx")  # Make sure the file is in the same directory
+file1 = pd.read_excel(file1_path)  # Make sure the file is in the same directory
+file2 = pd.read_excel(file2_path)  # Make sure the file is in the same directory
 
 #Combining two Excel files (file1 and file2 of our RNASeq count data)
 combined_file = pd.merge(file1, file2, on="gene_symbol", how="outer")  # Adjust the 'on' parameter based on your own data
