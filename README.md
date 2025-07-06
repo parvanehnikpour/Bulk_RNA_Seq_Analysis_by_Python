@@ -100,6 +100,4 @@ In the test data provided, we expect that samples with **IPS** state will group 
 - PCA and UMAP parameters can be adjusted to optimize the visualization for your specific dataset.
 
 ## Additional Information
-
-- This script was developed for the final project of **Python_for_biologists** course (Autumn 2024, Gothenburg University, Sweden), and it can be modified to suit specific requirements.
 - If you encounter any problems while using this script, please feel free to reach out to me at <a href="parvanehnikpour@gmail.com" style="text-decoration: underline;">parvanehnikpour@gmail.com</a>. I’m happy to assist you with any issues you may face.
